@@ -1,1 +1,1 @@
-# React 환경에서 Three.js 적용 공부
+# React 환경에서 Three.js 적용 공부중인 프로젝트입니다.
