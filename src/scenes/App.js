@@ -1,5 +1,3 @@
-import './App.css';
-
 import { GLTFLoader, OrbitControls } from 'three/examples/jsm/Addons.js';
 import * as THREE from 'three'
 

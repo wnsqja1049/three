@@ -10,12 +10,12 @@ export const SkyBox = () => {
   const textureLoader = new TextureLoader();
 
   const cubeTexture = cubeTextureLoader.load([
-		"/1.jpg",
-		"/2.jpg",
-		"/3.jpg",
-		"/4.jpg",
-		"/5.jpg",
-		"/6.jpg",
+		"/skybox-cube/1.jpg",
+		"/skybox-cube/2.jpg",
+		"/skybox-cube/3.jpg",
+		"/skybox-cube/4.jpg",
+		"/skybox-cube/5.jpg",
+		"/skybox-cube/6.jpg",
   ]);
 
   const texture = textureLoader.load(

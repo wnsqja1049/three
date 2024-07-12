@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Canvas, extend, useThree, useFrame } from "@react-three/fiber";
+import { extend, useThree, useFrame } from "@react-three/fiber";
 import {
   CubeTextureLoader,
   CubeCamera,

@@ -1,11 +1,9 @@
-import './App.css';
-
 import { Gltf, Environment, PointerLockControls, Sky } from '@react-three/drei';
 
-import { Camera } from './Camera';
-import { Sphere } from './Sphere';
-// import { Ground } from './Ground';
-import { SkyBox } from './SkyBox';
+import { Camera } from '../components/Camera';
+import { Sphere } from '../components/Sphere';
+import { CubeSkyBox } from '../components/NewSkyBox';
+import { SkyBox } from '../components/SkyBox';
 
 import React, { useRef } from "react";
 import { Canvas, extend, useThree, useFrame } from "@react-three/fiber";
@@ -17,16 +15,23 @@ import {
 	LinearMipmapLinearFilter,
 	TextureLoader,
 } from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-extend({ OrbitControls });
+import { OrbitControls } from "@react-three/drei";
 
-function App() {
+function SphereWithSkyboxScene() {
+	
 	return (
 		<>
 			<Canvas>
 				<Camera />
+				<OrbitControls />
+				<gridHelper />
 				<Sphere />
 				<SkyBox />
+
+				
+				{/* <GlbSkyBox /> */}
+
+
 				{/* <PointerLockControls /> */}
 				{/* <Sky/> */}
 				{/* <ambientLight intensity={1.5} /> */}
@@ -39,4 +44,4 @@ function App() {
 	)
 }
 
-export default App;
+export default SphereWithSkyboxScene;
